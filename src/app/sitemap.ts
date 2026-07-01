@@ -1,82 +1,78 @@
-import { MetadataRoute } from "next";
-import { products } from "@/lib/data/products";
-import { blogPosts } from "@/lib/data/blog-posts";
+import type { MetadataRoute } from "next";
+import { getBlogPosts, getProducts } from "@/lib/data/api";
 
 const BASE = "https://midyajibasha.com";
 const locales = ["en", "ar"] as const;
 
-function localeUrl(
-  locale: (typeof locales)[number],
+type Locale = (typeof locales)[number];
+
+function makeEntry(
+  locale: Locale,
   path: string,
-  date?: Date,
-) {
+  options: {
+    priority?: number;
+    changeFrequency?: MetadataRoute.Sitemap[number]["changeFrequency"];
+    lastModified?: Date;
+  } = {},
+): MetadataRoute.Sitemap[number] {
+  const otherLocale = locale === "en" ? "ar" : "en";
+
   return {
     url: `${BASE}/${locale}${path}`,
-    lastModified: date ?? new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
+    lastModified: options.lastModified ?? new Date(),
+    changeFrequency: options.changeFrequency ?? "weekly",
+    priority: options.priority ?? 0.8,
+    alternates: {
+      languages: {
+        [locale]: `${BASE}/${locale}${path}`,
+        [otherLocale]: `${BASE}/${otherLocale}${path}`,
+        "x-default": `${BASE}/en${path}`,
+      },
+    },
   };
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [posts, products] = await Promise.all([getBlogPosts(), getProducts()]);
   const urls: MetadataRoute.Sitemap = [];
 
-  // Core pages per locale
-  for (const locale of locales) {
-    urls.push(localeUrl(locale, ""));
-    urls.push({
-      ...localeUrl(locale, "/menu"),
-      priority: 0.9,
-      changeFrequency: "weekly",
-    });
-    urls.push({
-      ...localeUrl(locale, "/blog"),
-      priority: 0.8,
-      changeFrequency: "weekly",
-    });
-    urls.push({
-      ...localeUrl(locale, "/about"),
-      priority: 0.7,
-      changeFrequency: "monthly",
-    });
-    urls.push({
-      ...localeUrl(locale, "/contact"),
-      priority: 0.7,
-      changeFrequency: "monthly",
-    });
-    urls.push({
-      ...localeUrl(locale, "/faq"),
-      priority: 0.7,
-      changeFrequency: "monthly",
-    });
-    urls.push({
-      ...localeUrl(locale, "/knowledge-hub"),
-      priority: 0.9,
-      changeFrequency: "weekly",
-    });
-  }
+  const corePages = [
+    { path: "", priority: 1.0, changeFrequency: "weekly" as const },
+    { path: "/menu", priority: 0.95, changeFrequency: "weekly" as const },
+    { path: "/guides", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/blog", priority: 0.85, changeFrequency: "weekly" as const },
+    { path: "/about", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/faq", priority: 0.75, changeFrequency: "monthly" as const },
+  ];
 
-  // Locale product pages
   for (const locale of locales) {
-    for (const p of products) {
-      urls.push({
-        url: `${BASE}/${locale}/menu/${p.slug}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
-        priority: 0.85,
-      });
+    for (const page of corePages) {
+      urls.push(
+        makeEntry(locale, page.path, {
+          priority: page.priority,
+          changeFrequency: page.changeFrequency,
+        }),
+      );
     }
-  }
 
-  // Locale blog pages
-  for (const locale of locales) {
-    for (const b of blogPosts) {
-      urls.push({
-        url: `${BASE}/${locale}/blog/${b.slug}`,
-        lastModified: new Date(b.date),
-        changeFrequency: "monthly",
-        priority: 0.7,
-      });
+    for (const product of products) {
+      urls.push(
+        makeEntry(locale, `/menu/${product.slug}`, {
+          priority: 0.85,
+          changeFrequency: "monthly",
+        }),
+      );
+    }
+
+    for (const post of posts) {
+      urls.push(
+        makeEntry(locale, `/blog/${post.slug}`, {
+          priority: 0.7,
+          changeFrequency: "monthly",
+          lastModified: new Date(post.date),
+        }),
+      );
     }
   }
 

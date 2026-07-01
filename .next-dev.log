@@ -1,0 +1,26 @@
+
+> midyaji-basha@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.24:3000
+✓ Ready in 1149ms
+Creating turbopack project {
+  dir: 'C:\\Users\\user\\Desktop\\Midyaji Basha\\midyaji-basha',
+  testMode: true
+}
+- Experiments (use with caution):
+  · optimizePackageImports
+
+ GET /en 200 in 2.9s (next.js: 1225ms, proxy.ts: 215ms, generate-params: 1013ms, application-code: 1493ms)
+ GET /en/menu 200 in 1171ms (next.js: 922ms, proxy.ts: 7ms, generate-params: 855ms, application-code: 243ms)
+ GET /ar 200 in 320ms (next.js: 16ms, proxy.ts: 5ms, generate-params: 7ms, application-code: 299ms)
+ GET /en/blog 200 in 1139ms (next.js: 1004ms, proxy.ts: 5ms, generate-params: 879ms, application-code: 130ms)
+ GET /en/faq 200 in 1911ms (next.js: 1636ms, proxy.ts: 6ms, generate-params: 898ms, application-code: 270ms)
+ GET /en/blog/what-is-midye-dolma 200 in 2.0s (next.js: 1760ms, proxy.ts: 13ms, generate-params: 1030ms, application-code: 230ms)
+ GET /en/guides 200 in 2.2s (next.js: 1703ms, proxy.ts: 31ms, generate-params: 1083ms, application-code: 505ms)
+ GET /ar 200 in 341ms (next.js: 17ms, proxy.ts: 18ms, generate-params: 8ms, application-code: 306ms)
+ GET /en/menu/stuffed-mussels 200 in 1320ms (next.js: 1014ms, proxy.ts: 5ms, generate-params: 892ms, application-code: 301ms)
+ GET /en 200 in 315ms (next.js: 17ms, proxy.ts: 5ms, generate-params: 9ms, application-code: 293ms)
+[?25h

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isValidLocale, getDir } from "@/lib/i18n/config";
+import { getDictionary } from "@/lib/i18n/getDictionary";
 
-import { StickyWhatsApp } from "@/components/ui/StickyWhatsApp";
-import { LocaleNavbar } from "@/components/layout/LocaleNavbar";
-import { LocaleFooter } from "@/components/layout/LocaleFooter";
+import { StickyWhatsApp } from "@/components/shared/ui/StickyWhatsApp";
+import { Navbar } from "@/components/shared/layout/Navbar";
+import { Footer } from "@/components/shared/layout/Footer";
 import { business, seoKeywords } from "@/lib/seo/business";
 
 export async function generateStaticParams() {
@@ -45,6 +46,7 @@ export async function generateMetadata({
       languages: {
         en: "https://midyajibasha.com/en",
         ar: "https://midyajibasha.com/ar",
+        "x-default": "https://midyajibasha.com/en",
       },
     },
     openGraph: {
@@ -92,13 +94,26 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
   const dir = getDir(locale);
+  const dict = await getDictionary(locale);
+  const htmlLang = locale === "ar" ? "ar" : "en";
+  const htmlDir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <div className="locale-shell" lang={locale} dir={dir}>
-      <LocaleNavbar locale={locale} />
+    <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang='${htmlLang}';document.documentElement.dir='${htmlDir}';`,
+        }}
+      />
+    <div className="locale-shell" dir={dir}>
+      <Navbar
+        locale={locale}
+        dict={{ nav: dict.nav, orderModal: dict.orderModal }}
+      />
       <main>{children}</main>
-      <LocaleFooter locale={locale} />
+      <Footer locale={locale} dict={dict} />
       <StickyWhatsApp />
     </div>
+    </>
   );
 }

@@ -5,17 +5,14 @@ import {
   IBM_Plex_Sans_Arabic,
 } from "next/font/google";
 import "./globals.css";
-import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
-import { SchemaJsonLd } from "@/components/schema/SchemaJsonLd";
-import { ScrollProgress } from "@/components/ui/ScrollProgress";
-import { RootChrome } from "@/components/layout/RootChrome";
+import { SchemaJsonLd } from "@/components/shared/schema/SchemaJsonLd";
+import { RootChrome } from "@/components/shared/layout/RootChrome";
 import { business, seoKeywords } from "@/lib/seo/business";
 import {
   graphSchema,
   organizationSchema,
   websiteSchema,
 } from "@/lib/seo/schema";
-import { cookies, headers } from "next/headers";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -91,22 +88,16 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Use the proxy-provided locale signal to determine document attributes.
-  const cookieStore = await cookies();
-  const headersList = await headers();
-  const headerLocale = headersList.get("x-midyaji-locale");
-  const localeCookie = headerLocale || cookieStore.get("locale")?.value || "en";
-  const normalizedLocale = localeCookie === "ar" ? "ar" : "en";
-  const dir = normalizedLocale === "ar" ? "rtl" : "ltr";
   return (
     <html
-      lang={normalizedLocale}
-      dir={dir}
+      lang="en"
+      dir="ltr"
+      suppressHydrationWarning
       className={`${playfair.variable} ${inter.variable} ${ibmArabic.variable}`}
     >
       <head>
@@ -126,14 +117,11 @@ export default async function RootLayout({
           href="https://midyajibasha.com/en"
         />
       </head>
-      <body dir={dir}>
+      <body>
         <SchemaJsonLd
           data={graphSchema([organizationSchema(), websiteSchema()])}
         />
-        <ScrollProgress />
-        <SmoothScrollProvider>
-          <RootChrome>{children}</RootChrome>
-        </SmoothScrollProvider>
+        <RootChrome>{children}</RootChrome>
       </body>
     </html>
   );

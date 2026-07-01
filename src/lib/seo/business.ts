@@ -9,7 +9,7 @@ export const business = {
   email: "info@midyajibasha.com",
   url: "https://midyajibasha.com",
   logo: "https://midyajibasha.com/logo.png",
-  ogImage: "https://midyajibasha.com/og-image.jpg",
+  ogImage: "https://midyajibasha.com/images/stuffed-mussels-og.webp",
   targetCountry: "Jordan",
   targetCity: "Amman",
   cuisine: ["Turkish", "Turkish Street Food", "Seafood"],

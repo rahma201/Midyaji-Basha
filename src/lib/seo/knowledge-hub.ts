@@ -4,7 +4,7 @@ export const hubContent = {
   en: {
     title: 'Mussels, Midye Dolma, and Turkish Street Food in Amman',
     description:
-      'A bilingual guide from Midyaji Basha about mussels, Midye Dolma, Turkish street food, Fatteh Yalanji, Cik Kofte, seafood culture, and Turkish food in Jordan.',
+      'A bilingual guide from Midyaji Basha about Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, Çiğ Köfte Meal, Turkish street food, and Turkish food in Jordan.',
     eyebrow: 'Knowledge Hub',
     intro:
       'Midyaji Basha is a Turkish Street Food Restaurant in Amman, Jordan with one clear culinary center: mussels. In Turkish food culture, mussels are more than seafood; they are a street-side ritual, a craft, and a social food eaten with lemon, spices, and conversation. This hub explains the dishes, ingredients, culture, and questions people search for when they ask about mussels, Midye Dolma, Turkish street food, and Turkish food in Jordan.',
@@ -33,22 +33,23 @@ export const hubContent = {
       {
         heading: 'Turkish street food in Jordan',
         body: [
-          'Turkish food has become familiar across Jordan through travel, family dining, television culture, and the popularity of Turkish restaurants. Street food is a more specific category. It is about immediacy, clear flavors, and dishes that feel alive in the hand. Midyaji Basha brings that street-food lens to Amman through mussels, Midye Dolma, Cik Kofte, Fatteh Yalanji, and Turkish-style wraps.',
+      'Turkish food has become familiar across Jordan through travel, family dining, television culture, and the popularity of Turkish restaurants. Street food is a more specific category. It is about immediacy, clear flavors, and dishes that feel alive in the hand. Midyaji Basha brings that street-food lens to Amman through Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.',
           'A Turkish Street Food Restaurant should answer practical questions clearly: what is the dish, what is inside it, how is it eaten, and how can someone order or visit? That is why this hub links directly to the menu, product pages, FAQ, and contact page. The goal is not just to rank for Turkish food in Jordan, but to help people understand what they are tasting before they arrive.',
         ],
       },
       {
         heading: 'Fatteh Yalanji, Cik Kofte, and the broader menu',
         body: [
-          'Fatteh Yalanji and Yalanci-style stuffed vine leaves belong to the wider family of rice, herbs, olive oil, and lemon flavors that many Levantine and Turkish food lovers recognize. They sit naturally beside Midye Dolma because both dishes care about filling, balance, acidity, and hand craft. For guests who want something lighter or plant-forward, Yalanji adds a familiar but refined route into the menu.',
-          'Cik Kofte, often written in Turkish as Çiğ Köfte, is another street-food classic. Modern versions are commonly made with fine bulgur, tomato paste, pepper paste, herbs, spices, lemon, and pomegranate molasses. It is bold, tangy, and usually served with fresh herbs or wraps. Together, mussels, Midye Dolma, Fatteh Yalanji, and Cik Kofte make Midyaji Basha more than one dish: they create a compact guide to Turkish street-food culture in Amman.',
+          'Yalanji Fatteh belongs to the wider family of rice, herbs, olive oil, lemon, and layered comfort that many Levantine and Turkish food lovers recognize. It sits naturally beside Midye Dolma because both products care about filling, balance, acidity, and hand craft. For guests who want something softer and shareable, Yalanji Fatteh adds a familiar but refined route into the menu.',
+          'Cik Kofte, often written in Turkish as Çiğ Köfte, is another street-food classic. Modern versions are commonly made with fine bulgur, tomato paste, pepper paste, herbs, spices, lemon, and pomegranate molasses. At Midyaji Basha it appears in two clear products: a fast sandwich and a fuller meal. Together, Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal create a compact guide to Turkish street-food culture in Amman.',
         ],
       },
     ],
     links: [
-      { href: '/en/menu/stuffed-mussels', label: 'Explore Midye Dolma' },
-      { href: '/en/menu/cig-kofte', label: 'Explore Cik Kofte' },
-      { href: '/en/menu/yalanci', label: 'Explore Fatteh Yalanji' },
+      { href: '/en/menu/turkish-stuffed-mussels', label: 'Explore Turkish Stuffed Mussels' },
+      { href: '/en/menu/yalanji-fatteh', label: 'Explore Yalanji Fatteh' },
+      { href: '/en/menu/cig-kofte-sandwich', label: 'Explore Çiğ Köfte Sandwich' },
+      { href: '/en/menu/cig-kofte-meal', label: 'Explore Çiğ Köfte Meal' },
       { href: '/en/faq', label: 'Read FAQs' },
       { href: '/en/contact', label: 'Contact Midyaji Basha' },
     ],
@@ -66,7 +67,7 @@ export const hubContent = {
       {
         question: 'Where can I find Turkish street food in Amman?',
         answer:
-          'Midyaji Basha is a Turkish Street Food Restaurant serving Amman, Jordan. The menu focuses on mussels, Midye Dolma, Cik Kofte, Fatteh Yalanji, and related Turkish street-food dishes. Use the contact page or WhatsApp for current availability and directions.',
+          'Midyaji Basha is a Turkish Street Food Restaurant serving Amman, Jordan. The menu focuses on Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal. Use the contact page or WhatsApp for current availability and directions.',
       },
       {
         question: 'What is Cik Kofte?',
@@ -78,7 +79,7 @@ export const hubContent = {
   ar: {
     title: 'المحار وميدي دولما والأكل التركي في عمّان',
     description:
-      'دليل من مضياجي باشا عن المحار، ميدي دولما، الأكل التركي في الشوارع، فتة يالنجي، تشيغ كوفتة، ثقافة المأكولات البحرية، والطعام التركي في الأردن.',
+      'دليل من ميديجي باشا عن المحار التركي، فتة اليالنجي، ساندويتش تشي كفتة، وجبة تشي كفتة، الأكل التركي في الشوارع، والطعام التركي في الأردن.',
     eyebrow: 'مركز المعرفة',
     intro:
       'مضياجي باشا مطعم أكل تركي في عمّان، الأردن، وله محور واضح: المحار. في الثقافة التركية لا يُنظر إلى المحار كنوع من المأكولات البحرية فقط، بل كطقس شارع وحرفة ولقمة اجتماعية تُؤكل مع الليمون والبهارات والحديث. هذا الدليل يشرح الأطباق والمكوّنات والثقافة والأسئلة التي يبحث عنها الناس عندما يسألون عن المحار، ميدي دولما، الأكل التركي في الشوارع، والطعام التركي في الأردن.',
@@ -107,22 +108,23 @@ export const hubContent = {
       {
         heading: 'الأكل التركي في الشوارع داخل الأردن',
         body: [
-          'أصبح الطعام التركي مألوفاً في الأردن عبر السفر والمطاعم والمسلسلات والثقافة اليومية. لكن أكل الشوارع فئة أدق: هو سرعة ووضوح نكهة وطبق تشعر به في اليد. يجلب مضياجي باشا هذه الروح إلى عمّان من خلال المحار، ميدي دولما، تشيغ كوفتة، فتة يالنجي، واللفائف التركية.',
+          'أصبح الطعام التركي مألوفاً في الأردن عبر السفر والمطاعم والمسلسلات والثقافة اليومية. لكن أكل الشوارع فئة أدق: هو سرعة ووضوح نكهة وطبق تشعر به في اليد. يجلب ميديجي باشا هذه الروح إلى عمّان من خلال المحار التركي، فتة اليالنجي، ساندويتش تشي كفتة، ووجبة تشي كفتة.',
           'مطعم الأكل التركي في الشوارع يجب أن يجيب بوضوح: ما الطبق؟ ممّ يتكوّن؟ كيف يؤكل؟ وكيف يمكن الطلب أو الزيارة؟ لذلك يربط هذا الدليل مباشرة بالقائمة وصفحات المنتجات والأسئلة الشائعة وصفحة التواصل. الهدف ليس الظهور فقط عند البحث عن الطعام التركي في الأردن، بل مساعدة الناس على فهم النكهة قبل التجربة.',
         ],
       },
       {
         heading: 'فتة يالنجي وتشيغ كوفتة وباقي القائمة',
         body: [
-          'فتة يالنجي ويالنجي ورق العنب ينتميان إلى عائلة أوسع من الأرز والأعشاب وزيت الزيتون والليمون، وهي نكهات يعرفها محبو الطعام الشامي والتركي. لذلك ينسجمان مع ميدي دولما، لأن الطبقين يهتمان بالحشوة والتوازن والحموضة والحرفة اليدوية.',
-          'تشيغ كوفتة، وتكتب بالتركية Çiğ Köfte، من كلاسيكيات أكل الشارع التركي. النسخ الحديثة تُحضّر غالباً من البرغل الناعم ومعجون الطماطم والفلفل والأعشاب والبهارات والليمون ودبس الرمان. طعمها قوي وحامض وعطري، وتؤكل مع الأعشاب أو الخس أو اللفائف. معاً، يصنع المحار وميدي دولما وفتة يالنجي وتشيغ كوفتة صورة مركزة عن ثقافة الأكل التركي في عمّان.',
+          'فتة اليالنجي تنتمي إلى عائلة أوسع من الأرز والأعشاب وزيت الزيتون والليمون والطبقات المريحة، وهي نكهات يعرفها محبو الطعام الشامي والتركي. لذلك تنسجم مع ميدي دولما، لأن المنتجين يهتمان بالحشوة والتوازن والحموضة والحرفة اليدوية.',
+          'تشيغ كوفتة، وتكتب بالتركية Çiğ Köfte، من كلاسيكيات أكل الشارع التركي. النسخ الحديثة تُحضّر غالباً من البرغل الناعم ومعجون الطماطم والفلفل والأعشاب والبهارات والليمون ودبس الرمان. في ميديجي باشا تظهر بمنتجين واضحين: ساندويتش سريع ووجبة أشبع. معاً، يصنع المحار التركي وفتة اليالنجي وساندويتش تشي كفتة ووجبة تشي كفتة صورة مركزة عن ثقافة الأكل التركي في عمّان.',
         ],
       },
     ],
     links: [
-      { href: '/ar/menu/stuffed-mussels', label: 'استكشف ميدي دولما' },
-      { href: '/ar/menu/cig-kofte', label: 'استكشف تشيغ كوفتة' },
-      { href: '/ar/menu/yalanci', label: 'استكشف فتة يالنجي' },
+      { href: '/ar/menu/turkish-stuffed-mussels', label: 'استكشف المحار التركي' },
+      { href: '/ar/menu/yalanji-fatteh', label: 'استكشف فتة اليالنجي' },
+      { href: '/ar/menu/cig-kofte-sandwich', label: 'استكشف ساندويتش تشي كفتة' },
+      { href: '/ar/menu/cig-kofte-meal', label: 'استكشف وجبة تشي كفتة' },
       { href: '/ar/faq', label: 'اقرأ الأسئلة الشائعة' },
       { href: '/ar/contact', label: 'تواصل مع مضياجي باشا' },
     ],
@@ -140,7 +142,7 @@ export const hubContent = {
       {
         question: 'أين أجد الأكل التركي في الشوارع في عمّان؟',
         answer:
-          'مضياجي باشا مطعم أكل تركي في عمّان، الأردن. تركّز القائمة على المحار وميدي دولما وتشيغ كوفتة وفتة يالنجي وأطباق تركية مرتبطة بها. استخدم صفحة التواصل أو واتساب لمعرفة التوفر الحالي والاتجاهات.',
+          'ميديجي باشا مطعم أكل تركي في عمّان، الأردن. تركّز القائمة على المحار التركي وفتة اليالنجي وساندويتش تشي كفتة ووجبة تشي كفتة فقط. استخدم صفحة التواصل أو واتساب لمعرفة التوفر الحالي والاتجاهات.',
       },
       {
         question: 'ما هي تشيغ كوفتة؟',

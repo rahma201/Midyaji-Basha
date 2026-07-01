@@ -1,48 +1,53 @@
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import { isValidLocale } from "@/lib/i18n/config";
-import { en } from "@/lib/i18n/en";
-import { ar } from "@/lib/i18n/ar";
-import { blogPosts } from "@/lib/data/blog-posts";
-import { LocaleBlogSearchSection } from "@/components/locale/LocaleBlogSearchSection";
+import type { Metadata } from 'next'
+import { BlogPage } from '@/features/blog'
+import { business } from '@/lib/seo/business'
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ar" }];
+  return [{ locale: 'en' }, { locale: 'ar' }]
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const { locale } = await params;
-  const isAr = locale === "ar";
+  const { locale } = await params
+  const isAr = locale === 'ar'
+  const title = isAr ? 'المدونة | مضياجي باشا' : 'Blog | Midyaji Basha'
+  const description = isAr
+    ? 'مقالات عن الأكل التركي في الشوارع، ميدي دولما، وثقافة المطبخ التركي في الأردن.'
+    : 'Articles about Turkish street food, Midye Dolma, and Turkish culinary culture in Jordan.'
+  const canonical = `${business.url}/${locale}/blog`
   return {
-    title: isAr ? "المدونة | مضياجي باشا" : "Blog | Midyaji Basha",
-    description: isAr
-      ? "مقالات عن الأكل التركي في الشوارع، ميدي دولما، وثقافة المطبخ التركي في الأردن."
-      : "Articles about Turkish street food, Midye Dolma, and Turkish culinary culture in Jordan.",
+    title,
+    description,
     alternates: {
-      canonical: `https://midyajibasha.com/${locale}/blog`,
+      canonical,
       languages: {
-        en: "https://midyajibasha.com/en/blog",
-        ar: "https://midyajibasha.com/ar/blog",
+        en: `${business.url}/en/blog`,
+        ar: `${business.url}/ar/blog`,
+        'x-default': `${business.url}/en/blog`,
       },
     },
-  };
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: 'Midyaji Basha',
+      locale: isAr ? 'ar_JO' : 'en_US',
+      type: 'website',
+      images: [{ url: business.ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: { card: 'summary_large_image', title, description, images: [business.ogImage] },
+    robots: { index: true, follow: true },
+  }
 }
 
 export default async function LocaleBlogPage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params;
-  if (!isValidLocale(locale)) notFound();
-  const dict = locale === "ar" ? ar : en;
-  return (
-    <div style={{ backgroundColor: "#0D0D0D" }} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <LocaleBlogSearchSection posts={blogPosts} dict={dict} locale={locale} />
-    </div>
-  );
+  const { locale } = await params
+  return <BlogPage locale={locale} />
 }

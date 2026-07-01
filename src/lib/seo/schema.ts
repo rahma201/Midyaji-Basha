@@ -94,11 +94,16 @@ export function restaurantSchema(): JsonLd {
       "Mussels",
       "المحار",
       "Turkish Stuffed Mussels",
+      "المحار التركي",
       "Midye Dolma",
+      "Yalanji Fatteh",
+      "فتة اليالنجي",
+      "Çiğ Köfte Sandwich",
+      "ساندويتش تشي كفتة",
+      "Çiğ Köfte Meal",
+      "وجبة تشي كفتة",
       "Turkish Cuisine",
       "Turkish Street Food",
-      "Seafood",
-      "Fatteh Yalanji",
       "Çiğ Köfte",
       "Amman",
       "Jordan",
@@ -151,11 +156,12 @@ export function menuSchema(locale: "en" | "ar" = "en"): JsonLd {
           "@type": "MenuItem",
           name:
             locale === "ar" && product.nameAr ? product.nameAr : product.name,
-          description: product.description,
+          description:
+            locale === "ar" ? product.descriptionAr : product.description,
           image: absoluteUrl(product.image),
           offers: {
             "@type": "Offer",
-            price: Number(product.price.replace(" JD", "")),
+            price: product.priceFrom,
             priceCurrency: "JOD",
             availability: "https://schema.org/InStock",
           },
@@ -194,6 +200,43 @@ export function faqSchema(
         text: item.answer,
       },
     })),
+  };
+}
+
+export function webPageSchema({
+  name,
+  description,
+  url,
+  locale,
+  breadcrumbs,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  locale: "en" | "ar";
+  breadcrumbs?: Array<{ name: string; url: string }>;
+}): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    name,
+    description,
+    url,
+    inLanguage: locale,
+    isPartOf: { "@id": `${business.url}/#website` },
+    about: { "@id": `${business.url}/#restaurant` },
+    ...(breadcrumbs && breadcrumbs.length > 0
+      ? { breadcrumb: breadcrumbSchema(breadcrumbs) }
+      : {}),
+  };
+}
+
+export function speakableSchema(cssSelectors: string[]): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SpeakableSpecification",
+    cssSelector: cssSelectors,
   };
 }
 

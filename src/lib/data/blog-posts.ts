@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "8 min read",
     author: "Midyaji Basha",
     category: "Food Guide",
-    image: "/images/unsplash-1.svg",
+    image: "/images/stuffed-mussels-story.webp",
     tags: ["midye dolma", "turkish street food", "stuffed mussels", "amman"],
     faqs: [
       {
@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Can vegetarians eat Midye Dolma?",
         answer:
-          "No — Midye Dolma contains fresh mussels (shellfish), so it is not suitable for vegetarians. For a vegetarian option at Midyaji Basha, we recommend Yalancı (stuffed vine leaves) or Çiğ Köfte, both of which are 100% plant-based.",
+          "No — Midye Dolma contains fresh mussels (shellfish), so it is not suitable for vegetarians. For a plant-forward option at Midyaji Basha, choose Yalanji Fatteh, the Çiğ Köfte Sandwich, or the Çiğ Köfte Meal.",
       },
       {
         question: "Is Midye Dolma available in Amman?",
@@ -63,7 +63,7 @@ The filling is what makes Midye Dolma truly special. A typical Istanbul-style fi
 - **Fresh dill and parsley**: Added at the end for brightness and color.
 - **Olive oil**: Used generously to enrich the filling and keep it moist during steaming.
 
-The spice blend is crucial. The combination of allspice and cinnamon is characteristic of Istanbul-style rice dishes — the same blend appears in other stuffed dishes like Yalancı and İç Pilav.
+The spice blend is crucial. The combination of allspice and cinnamon is characteristic of Istanbul-style rice dishes and helps explain why rice, lemon, herbs, and careful filling are so central to Turkish street-food culture.
 
 ## How Midye Dolma Is Made
 
@@ -98,7 +98,7 @@ If you've never tried Midye Dolma, you're missing one of the world's great stree
     readingTime: "10 min read",
     author: "Midyaji Basha",
     category: "Culture",
-    image: "/images/unsplash-2.svg",
+    image: "/images/stuffed-mussels-og.webp",
     tags: ["history", "ottoman cuisine", "istanbul", "turkish culture"],
     faqs: [
       {
@@ -167,7 +167,7 @@ Midyaji Basha was founded with a singular mission: to bring the authentic taste 
     readingTime: "9 min read",
     author: "Midyaji Basha",
     category: "Local Guide",
-    image: "/images/unsplash-3.svg",
+    image: "/images/turkish-wraps-blog.webp",
     tags: [
       "amman food guide",
       "turkish food jordan",
@@ -178,7 +178,7 @@ Midyaji Basha was founded with a singular mission: to bring the authentic taste 
       {
         question: "Where can I find authentic Turkish street food in Amman?",
         answer:
-          "Midyaji Basha at Mecca Mall is Amman's only specialized Turkish street food destination. We serve Midye Dolma (stuffed mussels), Çiğ Köfte, Yalancı, and Turkish Wraps — all prepared fresh daily using authentic Istanbul recipes.",
+          "Midyaji Basha at Mecca Mall is Amman's specialized Turkish street food destination. We serve exactly four products: Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.",
       },
       {
         question: "Is Turkish food popular in Amman?",
@@ -188,7 +188,7 @@ Midyaji Basha was founded with a singular mission: to bring the authentic taste 
       {
         question: "What Turkish dishes are available at Midyaji Basha?",
         answer:
-          "Midyaji Basha serves four core dishes: Midye Dolma (Turkish stuffed mussels with spiced rice), Çiğ Köfte (vegan bulgur wheat rolls with pomegranate molasses), Yalancı (cold stuffed vine leaves), and Turkish Wraps (lavash wraps with seasonal vegetables and Turkish spice blend).",
+          "Midyaji Basha serves four core products: Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.",
       },
       {
         question: "Where is Midyaji Basha in Amman?",
@@ -226,19 +226,19 @@ The key characteristics:
 
 **Çiğ Köfte**: The beloved vegan bulgur wheat rolls served with pomegranate molasses, fresh herbs, and lemon. One of Turkey's most popular street foods, now available in Amman with an authentic recipe.
 
-**Yalancı**: The elegant Turkish cold meze of stuffed vine leaves. Vegetarian, light, and beautifully aromatic — a perfect companion to the stuffed mussels.
+**Yalanji Fatteh**: A soft, shareable plate that brings yalanji-inspired lemon, herbs, rice, and creamy comfort into the four-product menu.
 
-**Turkish Wraps**: Fresh lavash wraps with seasonal vegetables and our signature Turkish spice blend. The most filling option on our menu and a complete meal in itself.
+**Çiğ Köfte Sandwich and Meal**: The sandwich is the quick handheld format, while the meal gives you a fuller plate experience of the same bold Turkish bulgur flavor.
 
 ## Where to Find Turkish Street Food in Amman
 
-For authentic Midye Dolma, Çiğ Köfte, Yalancı, and Turkish wraps in Amman, the answer is Midyaji Basha at Mecca Mall. We are the only specialized Turkish street food destination in Jordan, focusing exclusively on these authentic preparations.
+For Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal in Amman, the answer is Midyaji Basha at Mecca Mall. We focus exclusively on these four signature products.
 
 ## Tips for Your First Turkish Street Food Visit
 
 1. Come hungry — Turkish street food is meant to be eaten in multiple rounds, not as a single heavy dish
 2. Always use the lemon — it transforms every single dish, brightening flavors and cutting through richness
-3. Try everything — the combination of stuffed mussels, Çiğ Köfte, and Yalancı together is the complete Turkish street food experience
+3. Try the four signatures — Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal show the whole Midyaji Basha range
 4. Eat immediately — Turkish street food is always best consumed fresh, while the flavors are at their peak
 5. Bring friends — these dishes are made for sharing and create an experience that's better with company
 
@@ -258,7 +258,7 @@ Message us before visiting to confirm current availability and directions.`,
     readingTime: "7 min read",
     author: "Midyaji Basha",
     category: "Food Guide",
-    image: "/images/unsplash-2.svg",
+    image: "/images/cig-kofte-blog.webp",
     tags: ["cig kofte", "vegan", "turkish food", "bulgur", "plant-based"],
     faqs: [
       {
@@ -340,12 +340,12 @@ Our Çiğ Köfte is made fresh daily using authentic Turkish recipes. We use qua
     slug: "what-to-eat-at-midyaji-basha",
     title: "What to Eat at Midyaji Basha: A Complete Menu Guide",
     excerpt:
-      "First visit to Midyaji Basha at Mecca Mall? Here's everything on our menu explained — from Midye Dolma to Turkish Wraps — with ordering tips and recommendations.",
+      "First visit to Midyaji Basha at Mecca Mall? Here's the focused four-product menu explained, with ordering tips and recommendations.",
     date: "2025-03-01",
     readingTime: "7 min read",
     author: "Midyaji Basha",
     category: "Menu Guide",
-    image: "/images/unsplash-4.svg",
+    image: "/images/yalanci-blog.webp",
     tags: ["midyaji basha", "menu", "what to order", "mecca mall amman"],
     faqs: [
       {
@@ -356,22 +356,22 @@ Our Çiğ Köfte is made fresh daily using authentic Turkish recipes. We use qua
       {
         question: "Is there a vegetarian or vegan option at Midyaji Basha?",
         answer:
-          "Yes — both Çiğ Köfte and Yalancı are 100% vegan and vegetarian. Çiğ Köfte is made entirely from bulgur wheat, tomato paste, pomegranate molasses, and herbs. Yalancı is stuffed vine leaves filled with aromatic rice, pine nuts, and currants — no meat, no animal products.",
+          "Yalanji Fatteh and both Çiğ Köfte products are the best choices for guests looking for plant-forward orders. Çiğ Köfte is made from bulgur wheat, tomato paste, pomegranate molasses, and herbs.",
       },
       {
         question: "What is the most filling item on the menu?",
         answer:
-          "The Turkish Wraps are our most filling option — a generous lavash wrap filled with seasoned vegetables and our signature Turkish spice blend. For a full meal, a Turkish Wrap alongside a portion of Çiğ Köfte is a satisfying combination.",
+          "The Çiğ Köfte Meal is our fuller plate option. It gives you more room to enjoy the bold bulgur texture, herbs, lemon, and pomegranate molasses.",
       },
       {
         question: "Can I order a combination platter?",
         answer:
-          "We recommend ordering multiple dishes and sharing them — the full Turkish street food experience is best appreciated when you have several dishes at once. Try Midye Dolma, Çiğ Köfte, and Yalancı together for a complete spread.",
+          "We recommend ordering across the four signatures and sharing them. Try Turkish Stuffed Mussels with Yalanji Fatteh, then compare the Çiğ Köfte Sandwich with the Çiğ Köfte Meal.",
       },
       {
         question: "How fresh is the food at Midyaji Basha?",
         answer:
-          "Everything at Midyaji Basha is prepared fresh daily. Our mussels are stuffed each morning, our Çiğ Köfte is kneaded fresh, and our Yalancı is rolled by hand daily. We never use frozen or pre-prepared ingredients — freshness is the foundation of everything we do.",
+          "Everything at Midyaji Basha is prepared fresh daily. Our mussels are stuffed each morning, our Çiğ Köfte is kneaded fresh, and our Yalanji Fatteh is layered carefully. Freshness is the foundation of everything we do.",
       },
     ],
     content: `# What to Eat at Midyaji Basha: A Complete Menu Guide
@@ -382,7 +382,7 @@ Visiting Midyaji Basha for the first time? Our menu is focused and intentional �
 
 Midyaji Basha was built around a single conviction: doing a few things extraordinarily well is better than doing many things adequately. Our menu has four items. Each one has been refined to represent the very best of its tradition. This specialization is what makes us different from a general restaurant — we are a destination, not a stop.
 
-## Midye Dolma — Our Signature (4 JD)
+## Turkish Stuffed Mussels — Our Signature (0.75 JOD per piece)
 
 Midye Dolma is the heart and soul of Midyaji Basha. Fresh mussels, stuffed daily by hand with a fragrant mixture of seasoned rice, toasted pine nuts, sweet currants, allspice, and cinnamon. Served with fresh lemon wedges.
 
@@ -392,9 +392,9 @@ Midye Dolma is the heart and soul of Midyaji Basha. Fresh mussels, stuffed daily
 
 **Allergens**: Contains shellfish. May contain traces of tree nuts (pine nuts).
 
-## Çiğ Köfte — The Vegan Star (2.5 JD)
+## Çiğ Köfte Sandwich — The Quick Street-Food Order (2 JOD)
 
-Turkey's most popular vegan street food, made from fine bulgur wheat kneaded with concentrated tomato paste, pomegranate molasses, fresh herbs, and a blend of Turkish spices. Served with lemon wedges and fresh herbs.
+Turkey's famous plant-forward street food, made from fine bulgur wheat kneaded with concentrated tomato paste, pomegranate molasses, fresh herbs, and a blend of Turkish spices, then served as a fast handheld sandwich.
 
 **How to eat it**: Wrap in lavash bread or lettuce with herbs and lemon for the full experience. Can also be eaten on its own.
 
@@ -402,19 +402,19 @@ Turkey's most popular vegan street food, made from fine bulgur wheat kneaded wit
 
 **Allergens**: Contains gluten (bulgur wheat). Vegan and dairy-free.
 
-## Yalancı — The Elegant Meze (3.5 JD)
+## Yalanji Fatteh — The Shareable Plate (3.5 JOD small / 5.5 JOD large)
 
-Turkish cold stuffed vine leaves, filled with aromatic rice, pine nuts, and currants. Served chilled with fresh lemon. The name "Yalancı" means "liar" in Turkish — it "lies" about containing meat, since it's entirely vegetarian.
+A layered plate inspired by yalanji flavors, with lemon, herbs, rice, creamy texture, and a softer serving style that balances the sharper street-food energy of mussels and Çiğ Köfte.
 
-**How to eat it**: Enjoy cold, with a generous squeeze of lemon. Ideal as a side dish alongside Midye Dolma or as a light meal on its own.
+**How to eat it**: Scoop through the layers so each bite has creaminess, herbs, lemon, and texture. It works beautifully beside Turkish Stuffed Mussels.
 
 **Who it's for**: Vegetarians, those who appreciate refined Mediterranean-style meze, and anyone who wants a lighter option.
 
-**Allergens**: Contains pine nuts. Vegan, gluten-free.
+**Allergens**: Ask us for current allergen details before ordering.
 
-## Turkish Wraps — The Filling Option (3 JD)
+## Çiğ Köfte Meal — The Fuller Option (3.5 JOD)
 
-Fresh lavash flatbread wrapped with crisp seasonal vegetables and our signature Turkish spice blend. Made to order and served warm.
+The fuller Çiğ Köfte format gives you more of the same bold bulgur, herbs, lemon, and pomegranate molasses character in a plate-style meal.
 
 **How to eat it**: Hold it in both hands and take big bites — this is street food at its most portable.
 
@@ -426,13 +426,13 @@ Fresh lavash flatbread wrapped with crisp seasonal vegetables and our signature 
 
 1. One portion of **Midye Dolma** — to understand what Midyaji Basha is all about
 2. One portion of **Çiğ Köfte** — for contrast and something to compare against
-3. Add **Yalancı** if you're sharing or want a lighter complement
+3. Add **Yalanji Fatteh** if you're sharing or want a softer complement
 
-This combination gives you the complete Turkish street food experience — seafood, vegan grain dish, and cold meze — and allows you to understand why these foods work so beautifully together.
+This combination gives you the complete Midyaji Basha experience: seafood, a layered comfort plate, and two Çiğ Köfte formats.
 
 ## What Makes Our Food Different
 
-Every item at Midyaji Basha is prepared fresh each day. Our mussels are stuffed fresh every morning. Our Çiğ Köfte is kneaded from scratch daily. Our Yalancı is rolled by hand. Nothing sits, nothing is frozen, nothing is reheated. This commitment to freshness is what makes the food taste the way it does — and why customers come back.
+Every item at Midyaji Basha is prepared fresh each day. Our mussels are stuffed fresh every morning, our Çiğ Köfte is kneaded from scratch, and our Yalanji Fatteh is layered with care. This commitment to freshness is what makes the food taste the way it does — and why customers come back.
 
 Find Midyaji Basha in Amman, Jordan and message us for current availability before visiting.`,
   },
@@ -447,7 +447,7 @@ Find Midyaji Basha in Amman, Jordan and message us for current availability befo
     readingTime: "8 min read",
     author: "Midyaji Basha",
     category: "Culture",
-    image: "/images/unsplash-2.svg",
+    image: "/images/stuffed-mussels-og.webp",
     tags: [
       "turkish culture",
       "jordan",
@@ -464,7 +464,7 @@ Find Midyaji Basha in Amman, Jordan and message us for current availability befo
       {
         question: "What Turkish foods are most popular in Jordan?",
         answer:
-          "Doner kebabs and baklava have been the most widely available Turkish foods in Jordan for years. Midyaji Basha introduced a more specialized and authentic experience with Midye Dolma (stuffed mussels), Çiğ Köfte, Yalancı, and Turkish Wraps — representing the street food culture of Istanbul.",
+          "Doner kebabs and baklava have been the most widely available Turkish foods in Jordan for years. Midyaji Basha introduced a more specialized experience with Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.",
       },
       {
         question: "Is Turkish cuisine similar to Jordanian cuisine?",
@@ -474,7 +474,7 @@ Find Midyaji Basha in Amman, Jordan and message us for current availability befo
       {
         question: "Are there Turkish restaurants in Amman?",
         answer:
-          "Yes, Turkish cuisine has a growing presence in Amman. However, Midyaji Basha is unique as the only specialized Turkish street food destination in Jordan, focusing exclusively on the authentic Istanbul street food experience — Midye Dolma, Çiğ Köfte, Yalancı, and Turkish Wraps — rather than a general Turkish restaurant menu.",
+          "Yes, Turkish cuisine has a growing presence in Amman. However, Midyaji Basha is unique because it focuses exclusively on four signature products rather than a general Turkish restaurant menu.",
       },
       {
         question: "Will Midyaji Basha expand beyond Mecca Mall?",
@@ -512,7 +512,7 @@ The appetite for authentic international cuisine in Amman has grown significantl
 
 ## Midyaji Basha: Authentic Turkish Street Food in Amman
 
-Midyaji Basha was built on the belief that Amman deserved the real Istanbul street food experience — not a translation of it, but the original. We serve Midye Dolma, Çiğ Köfte, Yalancı, and Turkish Wraps using recipes developed through direct engagement with Istanbul's street food traditions.
+Midyaji Basha was built on the belief that Amman deserved a focused Turkish street food experience. We serve Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal using a compact product system shaped by Turkish street food traditions.
 
 Our customers include Jordanians who have visited Istanbul and want to recapture that experience, those who have never been but are curious, and a growing number of Turkish residents and visitors in Amman who are delighted to find the real thing here. Each group brings a different relationship to the food, and each confirms that what we're doing is genuine.
 

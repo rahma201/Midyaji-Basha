@@ -17,7 +17,7 @@ export const en = {
     line1: ["Turkey's", "Most", "Iconic"],
     line2: ["Street", "Food,"],
     line3: ["Now", "in", "Jordan."],
-    sub: "Authentic Turkish stuffed mussels, çiğ köfte, yalancı, and Turkish wraps served fresh daily at Mecca Mall, Amman.",
+    sub: "Four signature products only: Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal served fresh daily at Mecca Mall, Amman.",
     exploreMenu: "Explore Menu",
     orderNow: "Order Now",
     scroll: "Scroll",
@@ -42,16 +42,16 @@ export const en = {
   },
   menu: {
     badge: "Our Menu",
-    title: "Turkish Street Food Classics",
+    title: "Four Signature Turkish Street Food Products",
     subtitle:
-      "Four authentic dishes, each with a story as rich as their flavor.",
+      "A focused showcase of Turkish Stuffed Mussels, Yalanji Fatteh, and two Çiğ Köfte formats.",
     viewFull: "View Full Menu",
     viewDetails: "View Details",
     orderNow: "Order Now",
-    pageTitle: "Our Menu",
-    pageSubtitle: "Authentic Turkish Street Food",
+    pageTitle: "Our Four Signature Products",
+    pageSubtitle: "A premium showcase, not a traditional restaurant menu",
     pageDesc:
-      "Four handcrafted dishes prepared fresh daily at Mecca Mall, Amman.",
+      "Midyaji Basha revolves around exactly four products: Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.",
   },
   why: {
     badge: "Why Choose Us",
@@ -113,7 +113,7 @@ export const en = {
       },
       {
         q: "How much does Midye Dolma cost?",
-        a: "Our current price is 4 JD per serving and varies by portion size. Prices reflect ingredient quality, fresh preparation, and the craft involved in hand-stuffing each mussel. For bulk or catering orders we offer custom pricing — message us for quotes. Check the Menu page for up-to-date prices.",
+        a: "Turkish Stuffed Mussels are currently 0.75 JOD per piece. Yalanji Fatteh is 3.5 JOD small or 5.5 JOD large, the Çiğ Köfte Sandwich is 2 JOD, and the Çiğ Köfte Meal is 3.5 JOD. Check the Menu page for the four current products.",
       },
       {
         q: "Where is Midyaji Basha located?",
@@ -149,11 +149,11 @@ export const en = {
     badge: "Who We Are",
     title: "Midyaji Basha: Turkish Street Food in Jordan",
     subtitle:
-      "The only specialized Turkish street food brand in Jordan, bringing Istanbul's finest flavors to Amman.",
+      "A specialist Turkish street food brand in Jordan built around four signature products.",
     what: "What",
     whatTitle: "Turkish Street Food Brand",
     whatDesc:
-      "Midyaji Basha is a specialized Turkish street food brand dedicated to bringing authentic Istanbul flavors to Jordan. We focus exclusively on traditional Turkish street food preparations.",
+      "Midyaji Basha is a specialized Turkish street food brand dedicated to four focused products: Turkish Stuffed Mussels, Yalanji Fatteh, Çiğ Köfte Sandwich, and Çiğ Köfte Meal.",
     where: "Where",
     whereTitle: "Amman, Jordan",
     whereDesc:
@@ -161,28 +161,28 @@ export const en = {
     why: "Why",
     whyTitle: "The Only Authentic Choice",
     whyDesc:
-      "We are Jordan's only specialized Midye Dolma vendor. Our authentic recipes come directly from Istanbul's street food tradition, prepared fresh daily.",
+      "We build every page, order, and recommendation around the same four signatures, making the choice clear and the craft consistent.",
     servesTitle: "What We Serve",
     products: [
       {
-        name: "Midye Dolma",
-        desc: "Turkish stuffed mussels with spiced rice, pine nuts, and fresh lemon",
-        price: "4 JD",
+        name: "Turkish Stuffed Mussels",
+        desc: "Midye Dolma with seasoned rice and fresh lemon",
+        price: "0.75 JOD per piece",
       },
       {
-        name: "Çiğ Köfte",
-        desc: "Vegan bulgur wheat rolls with pomegranate molasses, herbs, and lemon",
-        price: "2.5 JD",
+        name: "Yalanji Fatteh",
+        desc: "Layered yalanji-inspired fatteh with lemon, herbs, and creamy texture",
+        price: "3.5 JOD small / 5.5 JOD large",
       },
       {
-        name: "Yalancı",
-        desc: "Cold stuffed vine leaves with aromatic rice, pine nuts, and olive oil",
-        price: "3.5 JD",
+        name: "Çiğ Köfte Sandwich",
+        desc: "Portable Turkish bulgur street-food sandwich",
+        price: "2 JOD",
       },
       {
-        name: "Turkish Wraps",
-        desc: "Fresh lavash wraps with seasonal vegetables and Turkish spice blend",
-        price: "3 JD",
+        name: "Çiğ Köfte Meal",
+        desc: "Fuller plate experience for the same bold Çiğ Köfte flavor",
+        price: "3.5 JOD",
       },
     ],
   },
